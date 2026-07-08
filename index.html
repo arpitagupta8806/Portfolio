@@ -379,16 +379,11 @@ nav{
 }
 .sk-item:hover{border-color:var(--acc);color:var(--acc);background:var(--acc-ll)}
 .sk-item.on{border-color:var(--acc);color:var(--acc);background:var(--acc-l)}
-.sk-bars{display:flex;flex-direction:column}
-.sk-row{display:flex;align-items:center;gap:1rem;padding:0.85rem 0;border-bottom:1px solid var(--border)}
-.sk-row:last-child{border:none}
-.sk-nm{font-family:var(--sans);font-size:0.78rem;font-weight:500;color:var(--ink2);width:180px;flex-shrink:0}
-.sk-track{flex:1;height:3px;background:var(--bg3);border-radius:100px;overflow:hidden}
-.sk-fill{height:100%;border-radius:100px;transition:width 1.6s cubic-bezier(.19,1,.22,1);width:0}
-.sf-g{background:var(--acc)}
-.sf-b{background:#1a6eb5}
-.sf-a{background:#b37f0a}
-.sk-pct{font-family:var(--sans);font-size:0.68rem;font-weight:600;color:var(--ink4);width:32px;text-align:right;flex-shrink:0}
+.sk-cat{
+  font-family:var(--sans);font-size:0.7rem;font-weight:700;
+  letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--ink4);margin-bottom:0.85rem;
+}
 
 /* ─── EXPERIENCE ─── */
 .exp-sec{background:var(--bg);border-top:1px solid var(--border)}
@@ -816,37 +811,31 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
 <div class="si">
   <div class="s-eye">Skills &amp; Stack</div>
   <h2 class="s-h">What I <span class="dim">bring.</span></h2>
-  <div class="sk-flow fi">
+  <div class="sk-cat">Product Management</div>
+  <div class="sk-flow fi" style="margin-bottom:2rem">
     <span class="sk-item on">🎯 Product Strategy</span>
     <span class="sk-item on">🤖 AI Product Strategy</span>
     <span class="sk-item on">🔍 Product Discovery</span>
-    <span class="sk-item">💳 Fintech</span>
-    <span class="sk-item">📊 Data Analytics</span>
+    <span class="sk-item">👤 User Research</span>
+    <span class="sk-item">⚖️ Feature Prioritization</span>
+    <span class="sk-item">📝 PRD Writing</span>
+    <span class="sk-item">📋 Requirement Gathering</span>
+    <span class="sk-item">📐 KPI Design</span>
+    <span class="sk-item">🤝 Stakeholder Management</span>
+    <span class="sk-item">🎨 UX Strategy</span>
+    <span class="sk-item">🚀 Product Execution</span>
+    <span class="sk-item">⚡ Workflow Strategy</span>
+    <span class="sk-item">🔗 Systems Thinking</span>
+    <span class="sk-item">💳 Fintech Domain</span>
+    <span class="sk-item">🧩 Brainstorming</span>
+  </div>
+  <div class="sk-cat">Technical</div>
+  <div class="sk-flow fi">
     <span class="sk-item">🐍 Python</span>
     <span class="sk-item">🗃️ SQL</span>
     <span class="sk-item">🧠 ML / AI</span>
-    <span class="sk-item">🔗 Systems Thinking</span>
-    <span class="sk-item">⚡ Workflow Strategy</span>
-    <span class="sk-item">📐 KPI Design</span>
-    <span class="sk-item">👤 User Research</span>
-    <span class="sk-item">⚖️ Feature Prioritization</span>
-    <span class="sk-item">🧩 Brainstorming</span>
-    <span class="sk-item">🚀 Product Execution</span>
-    <span class="sk-item">🎨 UX Strategy</span>
-    <span class="sk-item">📝 PRD Writing</span>
+    <span class="sk-item">📊 Data Analytics</span>
     <span class="sk-item">📈 Forecasting</span>
-    <span class="sk-item">📋 Requirement Gathering</span>
-    <span class="sk-item">💡 Brainstorming New Ideas</span>
-  </div>
-  <div class="sk-bars fi" data-d="1">
-    <div class="sk-row"><div class="sk-nm">Product Strategy</div><div class="sk-track"><div class="sk-fill sf-g" data-w="93"></div></div><div class="sk-pct">93%</div></div>
-    <div class="sk-row"><div class="sk-nm">AI / ML Strategy</div><div class="sk-track"><div class="sk-fill sf-b" data-w="88"></div></div><div class="sk-pct">88%</div></div>
-    <div class="sk-row"><div class="sk-nm">Product Discovery</div><div class="sk-track"><div class="sk-fill sf-g" data-w="91"></div></div><div class="sk-pct">91%</div></div>
-    <div class="sk-row"><div class="sk-nm">Data Analytics</div><div class="sk-track"><div class="sk-fill sf-b" data-w="85"></div></div><div class="sk-pct">85%</div></div>
-    <div class="sk-row"><div class="sk-nm">Python · SQL</div><div class="sk-track"><div class="sk-fill sf-b" data-w="80"></div></div><div class="sk-pct">80%</div></div>
-    <div class="sk-row"><div class="sk-nm">Feature Prioritization</div><div class="sk-track"><div class="sk-fill sf-g" data-w="92"></div></div><div class="sk-pct">92%</div></div>
-    <div class="sk-row"><div class="sk-nm">Stakeholder Mgmt</div><div class="sk-track"><div class="sk-fill sf-a" data-w="87"></div></div><div class="sk-pct">87%</div></div>
-    <div class="sk-row"><div class="sk-nm">Systems Thinking</div><div class="sk-track"><div class="sk-fill sf-a" data-w="86"></div></div><div class="sk-pct">86%</div></div>
   </div>
 </div>
 </section>
@@ -1092,17 +1081,15 @@ function closeM(id){document.getElementById('modal-'+id).classList.remove('open'
 function closeOut(e,id){if(e.target===document.getElementById('modal-'+id))closeM(id)}
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelectorAll('.mbg.open').forEach(m=>m.classList.remove('open'));document.body.style.overflow=''}});
 
-// scroll fade + skill bars
+// scroll fade
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
       e.target.classList.add('vis');
-      e.target.querySelectorAll('.sk-fill').forEach(b=>b.style.width=b.dataset.w+'%');
     }
   });
 },{threshold:0.07});
 document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
-document.querySelectorAll('.sk-fill').forEach(b=>b.style.width='0');
 
 // hide fallbacks if real photos are set
 function checkBg(el,fbId){
