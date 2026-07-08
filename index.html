@@ -772,9 +772,9 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
             <div class="ph-screen">
               <div class="ph-head">ai · agents</div>
               <div class="ph-metric">Multi-Agent<div class="ph-ml">Orchestration</div></div>
-              <div class="ph-row"><span class="ph-rl">Retrieval</span><span class="ph-badge bg-a">Elasticsearch</span></div>
+              <div class="ph-row"><span class="ph-rl">Retrieval</span><span class="ph-badge bg-a">RAG</span></div>
               <div class="ph-row"><span class="ph-rl">Data</span><span class="ph-badge bg-b">Text-to-SQL</span></div>
-              <div class="ph-row"><span class="ph-rl">Output</span><span class="ph-badge bg-g">Chatbot</span></div>
+              <div class="ph-row"><span class="ph-rl">Safety</span><span class="ph-badge bg-g">Guardrails</span></div>
             </div>
           </div>
         </div>
@@ -782,8 +782,8 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
       <div class="p-body">
         <div class="p-type">Enterprise · Innova Solutions · Current</div>
         <div class="p-title">AI Agent Orchestration Platform — Enterprise Chatbot</div>
-        <div class="p-desc">Product Manager owning an internal AI platform at Innova Solutions end-to-end — requirements, documentation, and wireframes, while leading a UI/UX team. Driving a multi-agent chatbot: an orchestration agent routes each query to a specialized agent (including an AI-powered skill matching agent), running either an Elasticsearch retrieval pipeline or a Text-to-SQL pipeline with query self-healing and safety validation, before a summary agent produces the chatbot's response.</div>
-        <div class="p-tags"><span class="p-tag">AI Agents</span><span class="p-tag">Chatbot</span><span class="p-tag">Text-to-SQL</span></div>
+        <div class="p-desc">Product Manager driving Agentic AI at Innova Solutions — multi-agent orchestration, Retrieval-Augmented Generation (RAG) over Elasticsearch, Text-to-SQL with self-healing and guardrails, and LLM-based summarization, shipped as a production chatbot. Full ownership end-to-end: requirements, documentation, wireframes, and a UI/UX team.</div>
+        <div class="p-tags"><span class="p-tag">Agentic AI</span><span class="p-tag">RAG</span><span class="p-tag">Text-to-SQL</span><span class="p-tag">LLM Orchestration</span><span class="p-tag">Guardrails</span></div>
         <div class="p-links"><span class="p-main-lnk">Read Details →</span></div>
       </div>
     </div>
@@ -867,8 +867,8 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
         <div class="tl-dt">June 2025 · Present</div>
         <div class="tl-role">Product Manager</div>
         <div class="tl-co">Innova Solutions</div>
-        <div class="tl-desc">Owning an internal AI platform end-to-end — requirements gathering, documentation, and wireframes, while leading a UI/UX team. Driving a multi-agent chatbot: an orchestration agent routes queries to specialized agents (including an AI skill matching agent) running Elasticsearch retrieval or Text-to-SQL pipelines with query self-healing and safety validation.</div>
-        <div class="tl-ch"><span class="tc">Enterprise PM</span><span class="tc">AI Agents</span><span class="tc">Chatbot</span><span class="tc">UI/UX Leadership</span><span class="tc">Text-to-SQL</span></div>
+        <div class="tl-desc">Owning an internal AI platform end-to-end — requirements, documentation, and wireframes, while leading a UI/UX team. Driving Agentic AI: multi-agent orchestration, RAG, Text-to-SQL, and LLM summarization behind a production chatbot.</div>
+        <div class="tl-ch"><span class="tc">Enterprise PM</span><span class="tc">Agentic AI</span><span class="tc">RAG</span><span class="tc">Text-to-SQL</span><span class="tc">LLM Orchestration</span></div>
       </div>
       <div class="tl-item">
         <div class="tl-dt">2023 · 2025</div>
@@ -1077,12 +1077,13 @@ footer{border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify
       <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>Requirements &amp; Documentation</strong> — Gathering requirements across stakeholders and writing the specs and PRDs that drive delivery.</div></div>
       <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>Wireframes &amp; UI/UX Leadership</strong> — Producing wireframes and directing a UI/UX team to turn requirements into shipped screens.</div></div>
     </div></div>
-    <div class="ms"><div class="ms-h">AI Architecture — Multi-Agent Chatbot</div>
-    <p>An orchestration agent sits in front of several specialized agents (names confidential) — including an AI-powered skill matching agent — and routes each user query to the right one. Each specialized agent runs one of two pipelines before handing off to a summary agent that composes the final chatbot response.</p>
+    <div class="ms"><div class="ms-h">AI Architecture — Agentic AI Chatbot</div>
+    <p>An Agentic AI system: a router/orchestration agent delegates each query to specialized sub-agents (names confidential), including an AI skill-matching agent, combining Retrieval-Augmented Generation, Text-to-SQL, and LLM summarization into one production chatbot.</p>
     <div class="ms-fl" style="margin-top:0.75rem">
-      <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>Retrieval Pipeline</strong> — Build a search query → run it against Elasticsearch → fetch the JSON results → summary agent → chatbot response.</div></div>
-      <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>Text-to-SQL Pipeline</strong> — Generate SQL from the query → self-heal the SQL if it fails → validate it's safe (guard against malicious/toxic queries) → execute → fetch the data → summary agent → chatbot response.</div></div>
-      <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>PM Ownership</strong> — Defined the orchestration logic, the boundaries between agents, the safety validation requirements on generated SQL, and the success criteria for each pipeline.</div></div>
+      <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>Retrieval-Augmented Generation (RAG)</strong> — Semantic search over Elasticsearch feeds relevant context into the response.</div></div>
+      <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>Text-to-SQL</strong> — Natural language converted to SQL, with self-healing query correction and safety guardrails against malicious queries.</div></div>
+      <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>LLM Summarization</strong> — A summarization agent synthesizes retrieved data into the final natural-language chatbot response.</div></div>
+      <div class="ms-fi"><div class="ms-fd"></div><div class="ms-ft"><strong>PM Ownership</strong> — Defined the orchestration logic, agent boundaries, guardrails, and success criteria across the system.</div></div>
     </div></div>
     <div class="ms"><div class="ms-h">Note on Confidentiality</div>
     <p style="color:var(--ink4)">Client and product details are confidential. Above reflects the scope and nature of work without exposing proprietary information.</p></div>
